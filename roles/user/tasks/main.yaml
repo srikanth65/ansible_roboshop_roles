@@ -1,0 +1,19 @@
+- name: "{{component}} app setup" 
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: app-setup
+
+- name: nodejs 
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: nodejs
+
+- name: "{{component}} set up" 
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: mongodb-setup
+
+- name: "{{component}} service start and enable" 
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: systemd

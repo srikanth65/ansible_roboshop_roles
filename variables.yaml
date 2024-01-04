@@ -1,0 +1,10 @@
+MONGODB_HOST: mongodb.aws2day.online
+REDIS_HOST: redis.aws2day.online
+MYSQL_HOST: mysql.aws2day.online
+RABBITMQ_HOST: rabbitmq.aws2day.online
+DISPATCH_HOST: dispatch.aws2day.online
+PAYMENT_HOST: payment.aws2day.online
+SHIPPING_HOST: shipping.aws2day.online
+USER_HOST: user.aws2day.online
+CART_HOST: cart.aws2day.online
+CATALOGUE_HOST: catalogue.aws2day.online

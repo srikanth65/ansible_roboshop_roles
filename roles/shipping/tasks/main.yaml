@@ -1,0 +1,19 @@
+- name: "{{component}} app setup"
+  ansible.builtin.import_role: 
+    name: common
+    tasks_from: app-setup  
+
+- name: Installing maven 
+  ansible.builtin.import_role: 
+    name: common
+    tasks_from: maven  
+
+- name: Installing mysql-setup 
+  ansible.builtin.import_role: 
+    name: common
+    tasks_from: mysql-setup 
+
+- name: "{{component}} service start and enable" 
+  ansible.builtin.import_role: 
+    name: common
+    tasks_from: systemd 

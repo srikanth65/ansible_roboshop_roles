@@ -1,0 +1,14 @@
+- name: "{{component}} setup" 
+  ansible.builtin.import_role: 
+    name: common
+    tasks_from: app-setup 
+
+- name: installing golang
+  ansible.builtin.import_role: 
+    name: common
+    tasks_from: golang  
+
+- name: "{{component}} start and enable" 
+  ansible.builtin.import_role: 
+    name: common
+    tasks_from: systemd 
