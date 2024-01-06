@@ -8,5 +8,7 @@ go to ansible server
 git clone ansible_roboshop_roles repo 
 cd to repo 
 ansible-vault encrypt /group_vars/all.yaml # set password to login and in all.yaml file give the username and password for the servers you need to login 
-
+Vault password:
+ansible_user: username
+ansible_password: password
 
