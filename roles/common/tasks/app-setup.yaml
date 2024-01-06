@@ -17,8 +17,8 @@
     url: "https://roboshop-builds.s3.amazonaws.com/{{component}}.zip"
     dest: /tmp 
 
-- name: "extracting {{component}} application"
-  ansible.builtin.unarchive: 
+- name: "extract {{component}} application"
+  ansible.builtin.unarchive:
     src: "/tmp/{{component}}.zip"
     dest: /app
-    remote_src: yes 
+    remote_src: yes
