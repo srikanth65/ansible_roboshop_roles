@@ -29,8 +29,8 @@
 - name: "extract {{component}} application code "
   tags: 
     - deployment 
-  ansible.builtin.copy:
-    src: /tmp/{{component}}.zip
+  ansible.builtin.unarchive:
+    src: "/tmp/{{component}}.zip"
     dest: /app
     remote_src: yes 
 
