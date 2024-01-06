@@ -30,7 +30,7 @@
   tags: 
     - deployment 
   ansible.builtin.copy:
-    src: "/tmp/{{component}}.zip"
+    src: /tmp/{{component}}.zip
     dest: /app
     remote_src: yes 
 
